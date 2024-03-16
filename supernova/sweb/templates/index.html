@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Supernova Detection using YOLOv8-small</title>
+</head>
+<body>
+    <form method="post" enctype="multipart/form-data" action="{% url 'hotel_image_view' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Upload</button>
+    </form>
+
+    <!-- Yüklenen resmi göstermek için -->
+    {% if uploaded_image %}
+    <img src="{{ uploaded_image.url }}" alt="Uploaded Image">
+    {% endif %}
+
+</body>
+</html>
+
