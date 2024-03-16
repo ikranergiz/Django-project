@@ -6,6 +6,10 @@ __pycache__
 db.sqlite3
 media
 
+#images
+.png
+.jpeg
+
 # OS generated files #
 ######################
 .DS_Store
