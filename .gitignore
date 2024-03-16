@@ -6,8 +6,11 @@ __pycache__
 db.sqlite3
 media
 
-# .DS_Store
+# OS generated files #
+######################
 .DS_Store
+.DS_Store?
+._* 
 
 # Backup files # 
 *.bak 
